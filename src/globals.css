@@ -1,7 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 
 .buttonNotch{
     background: linear-gradient(-45deg, transparent 15px, #01C3F1 0, #2BF2FF);
@@ -93,9 +95,11 @@
   }
 
   .iframe-cover{
-    background:url("../images/1488.gif") center center no-repeat;
+    background:url("./images/1488.gif") center center no-repeat;
     height: 100%;
     width: 100%;
+    
+
   }
 
   .HiddenFAQ{
