@@ -67,26 +67,26 @@ type Kpi = {
 
 const kpiData: Kpi[] = [
   {
-    title: "Sales",
-    metric: "$ 12,699",
-    progress: 15.9,
-    target: "$ 80,000",
-    delta: "13.2%",
+    title: "Earnings",
+    metric: "ETH 1.3",
+    progress: 32.5,
+    target: "ETH 4",
+    delta: "32.5%",
     deltaType: "moderateIncrease",
   },
   {
-    title: "Profit",
-    metric: "$ 45,564",
-    progress: 36.5,
-    target: "$ 125,000",
-    delta: "23.9%",
+    title: "Gigs",
+    metric: "17",
+    progress: 57,
+    target: "30",
+    delta: "57%",
     deltaType: "increase",
   },
   {
-    title: "Customers",
-    metric: "1,072",
-    progress: 53.6,
-    target: "2,000",
+    title: "No of Hours",
+    metric: "175",
+    progress: 21.8,
+    target: "800",
     delta: "10.1%",
     deltaType: "moderateDecrease",
   },
@@ -408,17 +408,9 @@ export default function FreelanceDashboard() {
                 <Flex className="truncate" justifyContent="between">
                   <Flex className="truncate" justifyContent="start">
                     <Text>
-                      <Bold>Zurich</Bold>
+                      <Bold>Project 4</Bold>
                     </Text>
-                    <Icon
-                      variant="simple"
-                      icon={ChevronDoubleRightIcon}
-                      size="xs"
-                      color="slate"
-                    />
-                    <Text className="truncate">
-                      <Bold>Vienna</Bold>
-                    </Text>
+                    
                   </Flex>
                   <Text color="indigo">
                     <Bold>On time</Bold>
@@ -427,15 +419,15 @@ export default function FreelanceDashboard() {
                 <ProgressBar color="indigo" value={61} className="mt-3" />
                 <Flex justifyContent="between" className="mt-3">
                   <div>
-                    <Title>10:40</Title>
-                    <Text>Platform 2</Text>
+                    <Title>4 Dec</Title>
+                    <Text>Milestone 2</Text>
                   </div>
                   <div>
-                    <Text className="text-center">7H 50M</Text>
+                    <Text className="text-center">14 Days</Text>
                   </div>
                   <div className="text-right">
-                    <Title>18:30</Title>
-                    <Text className="text-right">No Reservation</Text>
+                    <Title>18 Dec</Title>
+                    <Text className="text-right">Milestone 3</Text>
                   </div>
                 </Flex>
               </Card>
@@ -443,17 +435,9 @@ export default function FreelanceDashboard() {
                 <Flex className="truncate" justifyContent="between">
                   <Flex className="truncate" justifyContent="start">
                     <Text>
-                      <Bold>Vienna</Bold>
+                      <Bold>Project 2</Bold>
                     </Text>
-                    <Icon
-                      variant="simple"
-                      icon={ChevronDoubleRightIcon}
-                      size="xs"
-                      color="slate"
-                    />
-                    <Text className="truncate">
-                      <Bold>St. Anton am Arlberg </Bold>
-                    </Text>
+                    
                   </Flex>
                   <Text color="rose">
                     <Bold>Delayed</Bold>
@@ -467,29 +451,27 @@ export default function FreelanceDashboard() {
                 />
                 <Flex justifyContent="between" className="mt-3">
                   <div>
-                    <Title>13:30</Title>
-                    <Text>Sched. 13:30</Text>
+                    <Title>6 Dec</Title>
+                    <Text>Milestone 1</Text>
                   </div>
                   <div className="text-right">
-                    <Title>19:40</Title>
-                    <Text className="text-right">Sched. 18:55</Text>
+                    <Title>9 Dec</Title>
+                    <Text className="text-right">Milestone 2</Text>
                   </div>
                 </Flex>
                 <Callout
-                  title="+45 minutes behind plan"
+                  title="+1 day behind plan"
                   icon={ExclamationIcon}
                   color="rose"
                   className="mt-6"
                 >
-                  Due to maintenance work, we have a minor delay. If you need
-                  assistance with your travels today please contact the info
-                  hotline.
+                  Due to issue in SDK, we have a minor delay.
                 </Callout>
               </Card>
               <Card className="max-w-md mx-auto">
                 <Flex justifyContent="start">
                   <Text>
-                    <Bold>Nightjet Direction Bregenz</Bold>
+                    <Bold>Project 5</Bold>
                   </Text>
                   <Icon
                     variant="simple"

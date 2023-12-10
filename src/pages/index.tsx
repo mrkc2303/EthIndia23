@@ -17,12 +17,11 @@ export default function Home() {
       <div className="bg-gradient-to-t to-[#6e57e060]  from-transparent via-transparent">
         <Navbar />
         <Hero />
-        <Partners />
+        {/* <Partners /> */}
       </div>
       <Laptop />
       <Features />
       <Difference />
-      <FAQs />
       <Footer />
     </div>
   );

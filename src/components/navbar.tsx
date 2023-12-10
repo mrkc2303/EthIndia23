@@ -37,12 +37,12 @@ export default function Navbar() {
       {/* <MetaMaskProvider debug={false} sdkOptions={sdkOptions}> */}
       <div className='font-primary flex justify-between pt-2 px-1 w-full xl:pt-5 xl:px-12'>
       <div className='flex gap-32 font-bold text-3xl'>
-        SuperFlow 
+        <Link href="/">SuperFlow</Link>
       <div className='text-[#01C3F1] font-bold hidden xl:flex gap-12 justify-center items-center text-xs'>    
-        <a href="#features" className={`hover:underline underline-offset-8 duration-150`} >FEATURES</a>
+        {/* <a href="#features" className={`hover:underline underline-offset-8 duration-150`} >FEATURES</a> */}
         <Link href="/dashboard" rel="noopener noreferrer" className={`hover:underline underline-offset-8 duration-150 `}  > DASHBOARD </Link>
         
-        <a href="mailto:info@dextr.exchange" className={`hover:underline underline-offset-8 duration-150`} >CONTACT</a>
+        {/* <a href="mailto:info@dextr.exchange" className={`hover:underline underline-offset-8 duration-150`} >CONTACT</a> */}
       </div>
       </div>
       <div>

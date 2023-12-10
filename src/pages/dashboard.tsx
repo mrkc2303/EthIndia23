@@ -63,7 +63,7 @@ export default function Home() {
   ];
   
   return (
-    <div className=" text-white bg-[#211d34] h-screen">
+    <div className=" text-white bg-[#211d34] min-h-screen">
       <div className="bg-gradient-to-t to-[#6e57e060]  from-transparent via-transparent">
         <Navbar />
         {/* {
