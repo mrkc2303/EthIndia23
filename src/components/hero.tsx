@@ -16,7 +16,7 @@ export default function hero() {
           <h1 className='font-primary font-bold text-5xl md:text-8xl md:text-left text-center  md:leading-[6rem] '>The Ultimate Decentralized Work Ecosystem</h1>
         </div>        
         <div>
-          <p className='md:text-left text-center font-secondary text-[#ffffffa5] md:text-lg '> <span className='text-white underline underline-offset-4'>Discover SuperFlow :</span> Are you tired of juggling multiple platforms for freelancing, project management, and communication? Look no further! SuperFlow is here to revolutionize the way you work and collaborate in the digital world.</p>
+          <p className='md:text-left text-center font-secondary text-[#ffffffa5] md:text-lg '> <span className='text-white underline underline-offset-4'>Discover WorkRoll :</span> Are you tired of juggling multiple platforms for freelancing, project management, and communication? Look no further! WorkRoll is here to revolutionize the way you work and collaborate in the digital world.</p>
         </div> 
         <div className='mt-4 flex flex-col md:flex-row gap-8 md:justify-start md:text-left text-center justify-center'>
           {/* <a href='https://forms.zohopublic.com/brainchain/form/DextrBetaProgram1/formperma/jwTVjPwh8O2gVFb0TZSSjuBkc-IluEevhgOxTLzDqeY?utm_source=twitter&utm_medium=Zoho+Social' rel="noopener noreferrer" target='_blank' className='text-[#00091B] buttonNotch font-primary font-bold text-xs md:text-sm md:px-10 py-3'>JOIN WAITLIST</a>   */}

@@ -36,7 +36,7 @@ export default function difference() {
     {
       id: 1,
       title: 'Create Your Profile  ',
-      description: 'Join SuperFlow and set up your freelancer or business profile.',
+      description: 'Join WorkRoll and set up your freelancer or business profile.',
       image: Diff1
     },
     {
@@ -62,8 +62,8 @@ export default function difference() {
   return (
     <div id="features" className='py-12 xl:py-28 '>
       <div className='text-center flex justify-center mx-3 xl:mx-20 flex-col gap-3'>
-        <h1 className='text-3xl xl:text-6xl font-primary font-bold ' >How SuperFlow Works:</h1>
-        <p className=' text-center xl:mx-64 text-sm xl:text-xl text-[#ffffffa5]'> Experience the synergy of freelancing, project management, and communication on a single, decentralized platform. SuperFlow empowers you to work smarter, collaborate seamlessly, and embrace the future of decentralized work ecosystems. Join SuperFlow—where freelancing meets efficiency in the digital age!
+        <h1 className='text-3xl xl:text-6xl font-primary font-bold ' >How WorkRoll Works:</h1>
+        <p className=' text-center xl:mx-64 text-sm xl:text-xl text-[#ffffffa5]'> Experience the synergy of freelancing, project management, and communication on a single, decentralized platform. WorkRoll empowers you to work smarter, collaborate seamlessly, and embrace the future of decentralized work ecosystems. Join WorkRoll—where freelancing meets efficiency in the digital age!
         </p>
       </div>
       <div className='pt-6 xl:pt-12  mx-3 xl:mx-20'>
