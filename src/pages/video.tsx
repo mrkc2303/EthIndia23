@@ -10,7 +10,6 @@ import { usePushSocket } from '../hooks/usePushSocket';
 import { useEffect, useRef, useState } from 'react';
 import VideoPlayer from '../components/VideoPlayer';
 import { ADDITIONAL_META_TYPE } from '@pushprotocol/restapi/src/lib/payloads/constants';
-import { useSDK } from '@metamask/sdk-react';
 
 interface VideoCallMetaDataType {
   recipientAddress: string;
@@ -24,7 +23,7 @@ interface VideoCallMetaDataType {
 const env = ENV.PROD;
 
 const Home: NextPage = () => {
-  const { sdk, connected, connecting, account } = useSDK();
+  const { address, isConnected } = useAccount();
   const { chain } = useNetwork();
   const { data: signer } = useSigner();
   const { pushSocket, isPushSocketConnected, latestFeedItem } = usePushSocket({
@@ -41,20 +40,20 @@ const Home: NextPage = () => {
   const setRequestVideoCall = async () => {
     // fetching chatId between the local address and the remote address
     const user = await PushAPI.user.get({
-      account: account!,
+      account: address!,
       env,
     });
     let pgpPrivateKey = null;
     if (user?.encryptedPrivateKey) {
       pgpPrivateKey = await PushAPI.chat.decryptPGPKey({
         encryptedPGPPrivateKey: user.encryptedPrivateKey,
-        account: account,
+        account: address,
         signer,
         env,
       });
     }
     const response = await PushAPI.chat.chats({
-      account: account!,
+      account: address!,
       toDecrypt: true,
       pgpPrivateKey: pgpPrivateKey,
       env,
@@ -74,7 +73,7 @@ const Home: NextPage = () => {
       return produce(oldData, (draft: any) => {
         if (!recipientAddressRef || !recipientAddressRef.current) return;
 
-        draft.local.address = account;
+        draft.local.address = address;
         draft.incoming[0].address = recipientAddressRef.current.value;
         draft.incoming[0].status = PushAPI.VideoCallStatus.INITIALIZED;
         draft.meta.chatId = chatId;
@@ -127,18 +126,18 @@ const Home: NextPage = () => {
 
   // initialize video call object
   useEffect(() => {
-    if (!signer || !account || !chain?.id) return;
+    if (!signer || !address || !chain?.id) return;
 
     (async () => {
       const user = await PushAPI.user.get({
-        account: account,
+        account: address,
         env,
       });
       let pgpPrivateKey = null;
       if (user?.encryptedPrivateKey) {
         pgpPrivateKey = await PushAPI.chat.decryptPGPKey({
           encryptedPGPPrivateKey: user.encryptedPrivateKey,
-          account: account,
+          account: address,
           signer,
           env,
         });
@@ -152,7 +151,7 @@ const Home: NextPage = () => {
         setData,
       });
     })();
-  }, [signer, account, chain]);
+  }, [signer, address, chain]);
 
   // after setRequestVideoCall, if local stream is ready, we can fire the request()
   useEffect(() => {
@@ -241,7 +240,7 @@ const Home: NextPage = () => {
       <Heading>Push Video SDK Demo</Heading>
       <CallInfo>Video Call Status: {data.incoming[0].status}</CallInfo>
 
-      {connected ? (
+      {isConnected ? (
         <>
           <HContainer>
             <input

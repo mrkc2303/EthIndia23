@@ -11,6 +11,7 @@ import { sepolia } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
 import { infuraProvider } from 'wagmi/providers/infura';
 import { useEffect, useState } from 'react';
+import { AccountContext } from '@/contexts';
 const { chains, provider } = configureChains(
   [sepolia],
   [
@@ -45,11 +46,17 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <WagmiConfig client={wagmiClient}>
-      <SessionProvider
-        session={pageProps.session}
-      >
-        <Component {...pageProps} />
-      </SessionProvider>
+      <RainbowKitProvider theme={darkTheme()} chains={chains}>
+        <AccountContext.Provider
+              value={{ pgpPrivateKey, setPgpPrivateKey }}
+            >
+          <SessionProvider
+            session={pageProps.session}
+          >
+            <Component {...pageProps} />
+          </SessionProvider>
+           </AccountContext.Provider>
+      </RainbowKitProvider>
       </WagmiConfig>
   );
 }

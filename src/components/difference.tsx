@@ -35,26 +35,26 @@ export default function difference() {
   const content:any = [
     {
       id: 1,
-      title: 'Secure Ownership, Today & Tomorrow!',
-      description: 'With recoverability in case of lost private keys and facilitation of succession planning, your ownership remains secure and future-proofed. Enjoy peace of mind and long-term security for your digital assets.',
+      title: 'Create Your Profile  ',
+      description: 'Join SuperFlow and set up your freelancer or business profile.',
       image: Diff1
     },
     {
       id: 2,
-      title: 'Amplify Your Returns: Trade Smarter!',
-      description: 'Enjoy higher ROI as an LP by providing liquidity in a single token and earning fees from multiple pairs. Benefit from Best Price Discovery, earn Liquid Staking Rewards, and explore Copy & Algorithmic trading strategies.',
+      title: 'Explore Opportunities: ',
+      description: 'Browse through a diverse range of projects or find the perfect freelancer for your needs.',
       image: Diff2
     },
     {
       id: 3,
-      title: 'Your Reputation, Your Power!',
-      description: "Dextr's governance is not based on coin voting but on the reputation you earn based on your contributions to the ecosystem. Thereby  giving your reputation a voice and power to influence the direction of the platform.",
+      title: 'Efficient Project Management:',
+      description: "Utilize Jira-inspired tools to manage tasks, milestones, and project timelines effortlessly.",
       image: Diff3
     },
     {
       id: 4,
-      title: 'Trade Safely, Trade Confidently!',
-      description: 'Dextr prioritizes your security. You can trade with confidence and trust in a secure and fair trading environment with safeguards against price shocks, slippage, front running, wash trading, and bridge hacks.',
+      title: 'Real-Time Communication:',
+      description: 'Connect with collaborators instantly using integrated chat, calls, and video sharing features.',
       image: Diff4
     }
   ]
@@ -62,8 +62,8 @@ export default function difference() {
   return (
     <div id="features" className='py-12 xl:py-28 '>
       <div className='text-center flex justify-center mx-3 xl:mx-20 flex-col gap-3'>
-        <h1 className='text-3xl xl:text-6xl font-primary font-bold ' >Experience the Dextr Difference</h1>
-        <p className=' text-center xl:mx-64 text-sm xl:text-xl text-[#ffffffa5]'>Step into the Extraordinary: Unleash Unrivaled Benefits with Dextr. Immerse yourself in a captivating trading experience where robust security, cutting-edge tools, and great user experience converge, offering a pathway to the world's most user-centric exchange.
+        <h1 className='text-3xl xl:text-6xl font-primary font-bold ' >How SuperFlow Works:</h1>
+        <p className=' text-center xl:mx-64 text-sm xl:text-xl text-[#ffffffa5]'> Experience the synergy of freelancing, project management, and communication on a single, decentralized platform. SuperFlow empowers you to work smarter, collaborate seamlessly, and embrace the future of decentralized work ecosystems. Join SuperFlow—where freelancing meets efficiency in the digital age!
         </p>
       </div>
       <div className='pt-6 xl:pt-12  mx-3 xl:mx-20'>

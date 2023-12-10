@@ -21,8 +21,10 @@ const VideoPlayer = ({ stream, isMuted }: VideoPlayerPropsType) => {
 };
 
 const Video = styled.video`
-  width: 25vw;
+  width: 90vw;
   height: fit-content;
+  margin-bottom: 50px;
+  margin-left: 50px;
   border: 2px solid black;
 `;
 

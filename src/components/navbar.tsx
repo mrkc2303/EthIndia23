@@ -3,13 +3,15 @@
 import Image from 'next/image'
 import Logo from '../images/companylogo.svg'
 import Link from 'next/link'
-
+import { NextPage } from 'next';
+import styled from 'styled-components';
 import React, {useEffect, useState} from 'react'
 import {HiMenuAlt4} from 'react-icons/hi'
 import {AiOutlineClose} from 'react-icons/ai'
 import { useSDK } from '@metamask/sdk-react'
 import { MetaMaskProvider } from '@metamask/sdk-react';
 import { ConnectWalletButton } from './ConnectWalletButton'
+import { ConnectButton } from '@rainbow-me/rainbowkit'
 
 
 export default function Navbar() {
@@ -28,7 +30,7 @@ export default function Navbar() {
   
   const [toggleMenu, setToggleMenu] = useState(false);
   
-  const { sdk, connected, connecting, account } = useSDK();
+  // const { sdk, connected, connecting, account } = useSDK();
 
   return (
     <nav className="flex justify-between w-full">
@@ -48,7 +50,7 @@ export default function Navbar() {
         <ConnectWalletButton />
       </MetaMaskProvider>
 
-       
+        {/* <ConnectButton />        */}
       </div>
     </div>
       <div className="flex relative">
