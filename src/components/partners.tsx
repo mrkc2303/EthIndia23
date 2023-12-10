@@ -1,20 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
-import Arbitrum from '../images/arbitrum.svg'
-import Arcana from '../images/arcana.svg'
-import Aurora from '../images/aurora.svg'
-import Biconomy from '../images/biconomy.svg'
-import Bsc from '../images/bsc.svg'
-import Ef from '../images/ef.svg'
-import Polybase from '../images/polybase.svg'
-import Polygontech from '../images/polygontech.svg'
-import Router from '../images/router.svg'
-import Transak from '../images/transak.svg'
+import Push from '../images/pushProtocol.png'
+import Inch from '../images/1inch.png'
+import Metamask from '../images/metamask.webp'
+import Scroll from '../images/scroll.png'
 import Ethereum from '../images/Ethereum.svg'
 
 export default function partners() {
     const images = [
-        Arbitrum, Arcana, Aurora, Biconomy, Bsc, Ethereum, Polybase, Polygontech, Router, Transak     
+         Ethereum, Push, Inch, Metamask, Scroll
     ].map((image) => ({
         id: crypto.randomUUID(),
         image

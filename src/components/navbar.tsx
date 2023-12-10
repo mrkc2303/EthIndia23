@@ -41,6 +41,8 @@ export default function Navbar() {
       <div className='text-[#01C3F1] font-bold hidden xl:flex gap-12 justify-center items-center text-xs'>    
         {/* <a href="#features" className={`hover:underline underline-offset-8 duration-150`} >FEATURES</a> */}
         <Link href="/dashboard" rel="noopener noreferrer" className={`hover:underline underline-offset-8 duration-150 `}  > DASHBOARD </Link>
+        <Link href="/swap-tokens" className={`hover:underline underline-offset-8 duration-150 mr-7`} >SWAP TOKENS</Link>
+
         
         {/* <a href="mailto:info@dextr.exchange" className={`hover:underline underline-offset-8 duration-150`} >CONTACT</a> */}
       </div>
@@ -65,10 +67,9 @@ export default function Navbar() {
           flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in'>
             <li className="text-xl w-full my-2 font-primary ">
               <AiOutlineClose onClick={()=> setToggleMenu(false)}/></li>
-              <Link href="#features" className={`hover:underline underline-offset-8 duration-150 mr-7`} >FEATURES</Link>
-        <a href="https://dextr.gitbook.io/whitepaper/" target="_blank" rel="noopener noreferrer" className={`hover:underline underline-offset-8 duration-150 mr-7`} >WHITEPAPER</a>
-         <a href="mailto:info@dextr.exchange" className={`hover:underline underline-offset-8 duration-150 mr-7`} >CONTACT</a>
-         <a href='https://forms.zohopublic.com/brainchain/form/DextrBetaProgram1/formperma/jwTVjPwh8O2gVFb0TZSSjuBkc-IluEevhgOxTLzDqeY?utm_source=twitter&utm_medium=Zoho+SocialmG' rel='noopener noreferrer' target='_blank' className={`underline underline-offset-8 duration-150 mr-7`} >App Coming Soon</a>
+              <Link href="/swap-tokens" className={`hover:underline underline-offset-8 duration-150 mr-7`} >SWAP TOKENS</Link>
+              <Link href="/dashboard" rel="noopener noreferrer" className={`hover:underline underline-offset-8 duration-150 `}  > DASHBOARD </Link>
+      
 
 
           </ul>

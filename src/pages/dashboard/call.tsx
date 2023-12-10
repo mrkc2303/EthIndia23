@@ -277,6 +277,7 @@ export default function Home() {
                 PushAPI.VideoCallStatus.UNINITIALIZED
               }
               onClick={setRequestVideoCall}
+              className="text-black"
             >
               Ring Client
             </button>

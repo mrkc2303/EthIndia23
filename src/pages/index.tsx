@@ -8,6 +8,7 @@ import Features from "../components/features";
 import Difference from "../components/difference";
 import FAQs from "../components/faqs";
 import Footer from "../components/footer";
+import Swap from "@/components/swap";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,7 @@ export default function Home() {
       <div className="bg-gradient-to-t to-[#6e57e060]  from-transparent via-transparent">
         <Navbar />
         <Hero />
-        {/* <Partners /> */}
+        <Partners />
       </div>
       <Laptop />
       <Features />
